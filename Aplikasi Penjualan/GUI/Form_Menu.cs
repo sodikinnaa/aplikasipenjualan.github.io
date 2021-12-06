@@ -31,7 +31,7 @@ namespace Aplikasi_Penjualan
 
         private void transaksiToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            GUI.Teransaksi x = new GUI.Teransaksi();
+            GUI.Transaksi x = new GUI.Transaksi();
             x.MdiParent = this;
             x.Show();
         }

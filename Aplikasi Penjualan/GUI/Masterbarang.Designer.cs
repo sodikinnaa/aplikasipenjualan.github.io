@@ -53,7 +53,9 @@
             this.texthargaj = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtsatuan = new System.Windows.Forms.TextBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.Databarang)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -172,9 +174,9 @@
             // Databarang
             // 
             this.Databarang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Databarang.Location = new System.Drawing.Point(5, 261);
+            this.Databarang.Location = new System.Drawing.Point(3, 3);
             this.Databarang.Name = "Databarang";
-            this.Databarang.Size = new System.Drawing.Size(616, 192);
+            this.Databarang.Size = new System.Drawing.Size(586, 230);
             this.Databarang.TabIndex = 15;
             this.Databarang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Databarang_CellClick);
             // 
@@ -282,11 +284,20 @@
             this.txtsatuan.Size = new System.Drawing.Size(200, 20);
             this.txtsatuan.TabIndex = 7;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.Databarang);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(10, 261);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(611, 245);
+            this.flowLayoutPanel1.TabIndex = 28;
+            // 
             // Masterbarang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(771, 443);
+            this.ClientSize = new System.Drawing.Size(994, 568);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.txtsatuan);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.texthargaj);
@@ -299,7 +310,6 @@
             this.Controls.Add(this.texthargab);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.jenis);
-            this.Controls.Add(this.Databarang);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnew);
             this.Controls.Add(this.btedit);
@@ -314,6 +324,7 @@
             this.Name = "Masterbarang";
             this.Text = "Masterbarang";
             ((System.ComponentModel.ISupportInitialize)(this.Databarang)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -345,5 +356,6 @@
         private System.Windows.Forms.TextBox texthargaj;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtsatuan;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

@@ -14,7 +14,7 @@ namespace Aplikasi_Penjualan.Kelas
             string host = "localhost";
             string user = "root";
             string password = "";
-            string database = "kasir_penjualan";
+            string database = "pemrogramanbasisdata";
             string ConnStr ="server="+host+";user="+user+";database="+database+";password="+password+";";
             MySqlConnection conn = new MySqlConnection(ConnStr);
             return conn;

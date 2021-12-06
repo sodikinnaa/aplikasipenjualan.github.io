@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace Aplikasi_Penjualan.GUI
 {
-    public partial class Teransaksi : Form
+    public partial class Transaksi : Form
     {
-        public Teransaksi()
+        public Transaksi()
         {
             InitializeComponent();
+        }
+
+        private void cari_Click(object sender, EventArgs e)
+        {
+            GUI.DialogBarang x = new GUI.DialogBarang();
+            
+            x.Show();
+
         }
     }
 }
